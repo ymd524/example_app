@@ -11,12 +11,12 @@
 #
 default: &default
   adapter: mysql2
-  username: alphaspire
-  password: alphaspire_2016
+  username: example_app
+  password: example_app2017
 
 development:
   <<: *default
-  database: alphaspire_development
+  database: example_app_development
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -46,8 +46,8 @@ development:
 #
 production:
   <<: *default
-  database: alphaspire_production
-  username: alphaspire
+  database: example_app_production
+  username: example_app
 
 
 
